@@ -1,0 +1,14 @@
+
+<input type="number" [(ngModel)]="principal" placeholder="Enter principal amount (P)" />
+<br><br>
+<input type="number" [(ngModel)]="rate" placeholder="Enter rate of interest (R)" />
+<br><br>
+<input type="number" [(ngModel)]="time" placeholder="Enter time (T) in years" />
+<br><br>
+<input type="number" [(ngModel)]="frequency" placeholder="Enter number of times interest is compounded per year (n)" />
+<br><br>
+<button (click)="calculateCompoundInterest()">Calculate Compound Interest</button>
+
+<p *ngIf="compoundInterest !== null">Compound Interest: {{ compoundInterest.toFixed(2) }}</p>
+
+<p *ngIf="amount !== null">Total Amount (A): {{ amount.toFixed(2) }}</p>

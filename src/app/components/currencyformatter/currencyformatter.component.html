@@ -1,0 +1,12 @@
+
+<input type="number" [(ngModel)]="amount" placeholder="Enter amount" />
+<br><br>
+<select [(ngModel)]="currency" >
+  <option value="USD">Dollar (USD)</option>
+  <option value="PHP">Philippine Peso (PHP)</option>
+  <option value="EUR">Euro (EUR)</option>
+</select>
+<br><br>
+<button (click)="formatCurrency()">Format as Currency</button>
+
+<p>Formatted Amount: {{ formattedAmount }}</p>

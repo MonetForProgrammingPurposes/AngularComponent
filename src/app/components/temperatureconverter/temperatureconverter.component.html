@@ -1,0 +1,5 @@
+<input type="number" [(ngModel)]="celsius" placeholder="Celsius" (ngModelChange)="convertToFahrenheit()" />
+
+<input type="number" [(ngModel)]="fahrenheit" placeholder="Fahrenheit" (ngModelChange)="convertToCelsius()" />
+
+<p>{{ celsius }}°C is {{ fahrenheit }}°F and {{ fahrenheit }}°F is {{ celsius }}°C</p>

@@ -1,0 +1,8 @@
+
+<input type="number" [(ngModel)]="min" placeholder="Enter minimum value" />
+<br><br>
+<input type="number" [(ngModel)]="max" placeholder="Enter maximum value" />
+<br><br>
+<button (click)="generateRandomNumber()">Generate Random Number</button>
+
+<p>Random number: {{ randomNumber }}</p>

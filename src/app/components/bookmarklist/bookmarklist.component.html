@@ -1,0 +1,12 @@
+
+<input type="url" [(ngModel)]="url" placeholder="Enter a URL" />
+<br>
+<br>
+<button (click)="addUrl()">Add URL</button>
+
+<h2 *ngIf="urls.length > 0">URLs:</h2>
+<ul *ngIf="urls.length > 0">
+  <li *ngFor="let url of urls">
+    <a [href]="url" target="_blank">{{ url }}</a>
+  </li>
+</ul>

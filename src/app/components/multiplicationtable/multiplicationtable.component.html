@@ -1,0 +1,11 @@
+
+<label for="numberInput">Enter a number:</label>
+<input type="number" id="numberInput" [(ngModel)]="number" placeholder="Enter a number">
+<br><br>
+
+<button (click)="generateTable()">Generate Multiplication Table</button>
+<br><br>
+
+<ul>
+  <li *ngFor="let row of multiplicationTable">{{ row }}</li>
+</ul>
